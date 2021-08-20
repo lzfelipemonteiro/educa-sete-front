@@ -38,7 +38,7 @@ export default function DashboardApp() {
         <Box sx={{ pb: 5 }}>
           <Typography variant="h4">Aprendizado Adequado em 2019</Typography>
         </Box>
-        {/* <Grid container spacing={3} style={{ marginBottom: 40 }}>
+        <Grid container spacing={3} style={{ marginBottom: 40 }}>
           <Grid item xs={12} sm={6} md={4}>
             <AppPort5EF />
           </Grid>
@@ -57,23 +57,23 @@ export default function DashboardApp() {
           <Grid item xs={12} sm={6} md={4}>
             <AppMath3EM />
           </Grid>
-        </Grid> */}
+        </Grid>
 
         <Box sx={{ pb: 5 }}>
           <Typography variant="h4">Taxa de Rendimento</Typography>
         </Box>
         <Grid container spacing={3}>
-          {/* <Grid item xs={12} md={6} lg={4}>
+          <Grid item xs={12} md={6} lg={4}>
             <AppCurrentVisits />
-          </Grid> */}
+          </Grid>
 
-          {/* <Grid item xs={12} md={6} lg={4}>
+          <Grid item xs={12} md={6} lg={4}>
             <AppAnosFinais />
-          </Grid> */}
+          </Grid>
 
-          {/* <Grid item xs={12} md={6} lg={4}>
+          <Grid item xs={12} md={6} lg={4}>
             <AppEnsinoMedio />
-          </Grid> */}
+          </Grid>
 
           <Grid item xs={12} md={6} lg={12}>
             <AppWebsiteVisits />
