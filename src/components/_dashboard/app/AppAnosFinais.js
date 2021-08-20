@@ -47,22 +47,22 @@ export default function AppCurrentVisits() {
   useEffect(() => {
     async function getData() {
       const response = await api.get('/taxa-rendimento');
-      console.log(response.data[0]);
+      // console.log(response.data[0]);
       setDataAPI(response.data[0]);
-      console.log(response.data[0].dataTable[1].stepSchool);
+      // console.log(response.data[0].dataTable[1].stepSchool);
       // console.log(response.data[0].headerTable.splice(1, 3));
       setLabels(response.data[0].headerTable.splice(1, 3));
       setTitle(response.data[0].dataTable[1].stepSchool);
 
       const numberData = [];
 
-      console.log(response.data[0].dataTable[1].items);
+      // console.log(response.data[0].dataTable[1].items);
       response.data[0].dataTable[1].items.forEach((item) => {
         const number = Number(item.text.split(' ')[0].replace(/\./g, ''));
         // console.log(number);
         numberData.push(number);
       });
-      console.log(numberData);
+      // console.log(numberData);
 
       setChartData(numberData);
     }

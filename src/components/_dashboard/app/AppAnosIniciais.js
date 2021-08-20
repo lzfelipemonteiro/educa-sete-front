@@ -60,7 +60,7 @@ export default function AppCurrentVisits() {
         // console.log(number);
         numberData.push(number);
       });
-      console.log(numberData);
+      // console.log(numberData);
 
       setChartData(numberData);
     }
