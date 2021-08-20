@@ -55,10 +55,6 @@ export default function DashboardApp() {
           </Grid>
         </Grid>
 
-        {/* <Grid item xs={12} md={6} lg={8}>
-            <AppWebsiteVisits />
-          </Grid> */}
-
         <Box sx={{ pb: 5 }}>
           <Typography variant="h4">Taxa de Rendimento</Typography>
         </Box>
@@ -75,7 +71,11 @@ export default function DashboardApp() {
             <AppEnsinoMedio />
           </Grid>
 
-          <Grid item xs={12} md={6} lg={8}>
+          <Grid item xs={12} md={6} lg={12}>
+            <AppWebsiteVisits />
+          </Grid>
+
+          {/* <Grid item xs={12} md={6} lg={8}>
             <AppConversionRates />
           </Grid>
 
@@ -97,7 +97,7 @@ export default function DashboardApp() {
 
           <Grid item xs={12} md={6} lg={8}>
             <AppTasks />
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
     </Page>
