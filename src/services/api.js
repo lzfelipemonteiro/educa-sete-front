@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import axios from 'axios';
 
 const api = axios.create({

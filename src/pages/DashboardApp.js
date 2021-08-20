@@ -44,6 +44,10 @@ export default function DashboardApp() {
             <AppWebsiteVisits />
           </Grid>
 
+          <Grid item xs={12} md={6} lg={8}>
+            <AppWebsiteVisits />
+          </Grid>
+
           <Grid item xs={12} md={6} lg={4}>
             <AppCurrentVisits />
           </Grid>
