@@ -22,7 +22,11 @@ import {
   AppMath5EF,
   AppMath9EF,
   AppPort3EM,
-  AppPort9EF
+  AppPort9EF,
+  AppQuestion,
+  AppQuestion2,
+  AppQuestion3,
+  AppQuestion4
 } from '../components/_dashboard/app';
 
 // ----------------------------------------------------------------------
@@ -34,7 +38,7 @@ export default function DashboardApp() {
         <Box sx={{ pb: 5 }}>
           <Typography variant="h4">Aprendizado Adequado em 2019</Typography>
         </Box>
-        <Grid container spacing={3} style={{ marginBottom: 40 }}>
+        {/* <Grid container spacing={3} style={{ marginBottom: 40 }}>
           <Grid item xs={12} sm={6} md={4}>
             <AppPort5EF />
           </Grid>
@@ -53,30 +57,42 @@ export default function DashboardApp() {
           <Grid item xs={12} sm={6} md={4}>
             <AppMath3EM />
           </Grid>
-        </Grid>
-
-        <Grid item xs={12} md={6} lg={8}>
-          <AppWebsiteVisits />
-        </Grid>
+        </Grid> */}
 
         <Box sx={{ pb: 5 }}>
           <Typography variant="h4">Taxa de Rendimento</Typography>
         </Box>
         <Grid container spacing={3}>
-          <Grid item xs={12} md={6} lg={4}>
+          {/* <Grid item xs={12} md={6} lg={4}>
             <AppCurrentVisits />
-          </Grid>
+          </Grid> */}
 
-          <Grid item xs={12} md={6} lg={4}>
+          {/* <Grid item xs={12} md={6} lg={4}>
             <AppAnosFinais />
-          </Grid>
+          </Grid> */}
 
-          <Grid item xs={12} md={6} lg={4}>
+          {/* <Grid item xs={12} md={6} lg={4}>
             <AppEnsinoMedio />
-          </Grid>
+          </Grid> */}
 
           <Grid item xs={12} md={6} lg={12}>
             <AppWebsiteVisits />
+          </Grid>
+
+          <Grid item xs={12} md={6} lg={12}>
+            <AppQuestion />
+          </Grid>
+
+          <Grid item xs={12} md={6} lg={12}>
+            <AppQuestion2 />
+          </Grid>
+
+          <Grid item xs={12} md={6} lg={12}>
+            <AppQuestion3 />
+          </Grid>
+
+          <Grid item xs={12} md={6} lg={12}>
+            <AppQuestion4 />
           </Grid>
 
           {/* <Grid item xs={12} md={6} lg={8}>

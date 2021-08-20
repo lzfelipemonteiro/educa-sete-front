@@ -18,3 +18,7 @@ export { default as AppMath5EF } from './AppMath5EF';
 export { default as AppMath9EF } from './AppMath9EF';
 export { default as AppPort3EM } from './AppPort3EM';
 export { default as AppMath3EM } from './AppMath3EM';
+export { default as AppQuestion } from './AppQuestion';
+export { default as AppQuestion2 } from './AppQuestion2';
+export { default as AppQuestion3 } from './AppQuestion3';
+export { default as AppQuestion4 } from './AppQuestion4';

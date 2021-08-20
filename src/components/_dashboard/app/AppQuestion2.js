@@ -9,7 +9,7 @@ import { BaseOptionChart } from '../../charts';
 import api from '../../../services/api';
 // ----------------------------------------------------------------------
 
-export default function AppQuestion() {
+export default function AppQuestion2() {
   const [labels, setLabels] = useState();
   const [title, setTitle] = useState();
   const [percents, setPercents] = useState();
@@ -45,14 +45,14 @@ export default function AppQuestion() {
       const res = await api.get('/alunos/5');
       const res2 = await api.get('/alunos/9');
       const res3 = await api.get('/alunos/3');
-      setLabels(res.data[1].Resultados);
-      setLabels2(res2.data[1].Resultados);
-      setLabels3(res3.data[1].Resultados);
+      setLabels(res.data[2].Resultados);
+      setLabels2(res2.data[2].Resultados);
+      setLabels3(res3.data[2].Resultados);
 
-      setTitle(res.data[1].Indicador);
-      setPercents(res.data[1].Porcentagens);
-      setPercents2(res2.data[1].Porcentagens);
-      setPercents3(res3.data[1].Porcentagens);
+      setTitle(res.data[2].Indicador);
+      setPercents(res.data[2].Porcentagens);
+      setPercents2(res2.data[2].Porcentagens);
+      setPercents3(res3.data[2].Porcentagens);
     }
     getData();
   }, []);
