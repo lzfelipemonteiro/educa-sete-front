@@ -11,6 +11,8 @@ import {
   AppWeeklySales,
   AppOrderTimeline,
   AppCurrentVisits,
+  AppAnosFinais,
+  AppEnsinoMedio,
   AppWebsiteVisits,
   AppTrafficBySite,
   AppCurrentSubject,
@@ -40,12 +42,20 @@ export default function DashboardApp() {
             <AppBugReports />
           </Grid>
 
-          <Grid item xs={12} md={6} lg={8}>
+          {/* <Grid item xs={12} md={6} lg={8}>
             <AppWebsiteVisits />
-          </Grid>
+          </Grid> */}
 
           <Grid item xs={12} md={6} lg={4}>
             <AppCurrentVisits />
+          </Grid>
+
+          <Grid item xs={12} md={6} lg={4}>
+            <AppAnosFinais />
+          </Grid>
+
+          <Grid item xs={12} md={6} lg={4}>
+            <AppEnsinoMedio />
           </Grid>
 
           <Grid item xs={12} md={6} lg={8}>
